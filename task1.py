@@ -18,8 +18,23 @@ digits: optional. The number of decimal places to keep
 round(103.2221,2) -> 103.22
 """
 
+num = 0
+number = 0
 openBalance = 1000
-deposits = [200,200,200,200,200,200,200,200,200,200,200,200]            # final: 3328.8
+deposits = [200,200,200,200,200,200,200,200,200,200,200,200]    
+for i in deposits:
+    num = i*1.05
+    openBalance = openBalance+num
+    openBalance = round(openBalance, 2)
+print(openBalance)
+
+
+
+
+
+
+
+# final: 3328.8
 #deposits = [500,1000,300,-250,500,185,-500,205,1200,-550,125,200]      # final: 3887.71
 #deposits = [1000,542,221.52,983,29.75,-10,982.23,10988,287,198,32,100]  # final: 16702.93
 

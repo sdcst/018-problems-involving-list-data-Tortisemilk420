@@ -19,5 +19,17 @@ Uncomment lines 16,17 and 18 for different test data
 total = 0
 gst = 0
 pst = 0
+x = [92.18, 72.74, 89.57, 44.89, 97.12, 91.97]
+
+for i in x:
+    total = (sum(x))
+else:
+    print(f"Your subtotal is {total}")
+    pst = round(total * 0.07, 2)
+    gst = round(total * 0.05, 2)
+    print(f"Your PSt is {pst}")
+    print(f"Your GST is {gst}")
+    gtotal = total + pst + gst
+    print (f"Your total is {gtotal}")
 
     
